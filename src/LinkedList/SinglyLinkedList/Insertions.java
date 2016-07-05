@@ -4,6 +4,8 @@ package LinkedList.SinglyLinkedList;
  * Created by Gurpreet on 05/07/16.
  */
 
+//Inserting into a linked list
+
 public class Insertions {
 
     private static Node head = null;
