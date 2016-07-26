@@ -19,6 +19,14 @@ public class Insertion {
 
     }
 
+    static void createList(){       //called in deletion class, no use here
+        insertAtStart();
+        insertAtEnd();
+        insertAtEnd();
+        insertAtEnd();
+        insertInMiddle(4);
+    }
+
     private static void printList() {
         NodeCLL temp = head;
         do {
