@@ -5,21 +5,21 @@ import java.util.Stack;
 /**
  * Created by Gurpreet on 26/07/16.
  */
-public class FindMinimumInO1 {
+public class FindMinimumInO1_Optimum {
 
-    //Run the optimum solution too to see the difference n space complexity
+    //Run the normal solution too to see the difference n space complexity
 
     static Stack<Integer> stack = new Stack<>();
     static Stack<Integer> minStack = new Stack<>();
 
-    static int input[] = {5, 2, 4, 1, 7, 0};
+    static int[] input = {3, 5, 0, 1, 7, 3, 6};
 
     public static void main(String[] args) {
 
-        for (int i : input) {
+        for (int i : input){
             stack.push(i);
-            if (minStack.empty()) minStack.push(i);
-            else    minStack.push(Math.min(minStack.peek(), i));
+            if(minStack.empty())    minStack.push(i);
+            else if(minStack.peek() > i)   minStack.push(i);
         }
 
         System.out.println(minStack.peek());
