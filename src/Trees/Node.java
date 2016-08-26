@@ -3,6 +3,19 @@ package Trees;
 /**
  * Created by Gurpreet on 26/08/16.
  */
+
+/**
+ * Tree structure used for examples:
+
+
+                 0
+                / \
+               1   2
+              / \   \
+             3   4   5
+
+ */
+
 public class Node {
 
     private int data;
@@ -38,4 +51,5 @@ public class Node {
     public void setRight(Node right) {
         this.right = right;
     }
+
 }
