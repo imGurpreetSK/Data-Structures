@@ -55,16 +55,16 @@ public class DiameterOfTreeOptimized {
             return 0;
         }
 
-        Height left = new Height(), right = new Height();
+        Height leftHeight = new Height(), rightHeight = new Height();
 
-        left.h++;
-        right.h++;
-        int leftDia = findDiameter(root.getLeft(), left);
-        int rightDia = findDiameter(root.getRight(), right);
+        leftHeight.h++;
+        rightHeight.h++;
+        int leftDia = findDiameter(root.getLeft(), leftHeight);
+        int rightDia = findDiameter(root.getRight(), rightHeight);
 
-        height.h = Math.max(left.h, right.h) + 1;
+        height.h = Math.max(leftHeight.h, rightHeight.h) + 1;
 
-        return Math.max(Math.max(leftDia, rightDia), left.h + right.h + 1);
+        return Math.max(Math.max(leftDia, rightDia), leftHeight.h + rightHeight.h + 1);
 
     }
 
