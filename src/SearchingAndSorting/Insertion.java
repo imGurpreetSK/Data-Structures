@@ -30,7 +30,7 @@ public class Insertion {
                 arr[j+1] = arr[j];
                 j--;
             }
-            //insert in array
+            //Insert in array
             arr[j+1] = temp;
 
         }
