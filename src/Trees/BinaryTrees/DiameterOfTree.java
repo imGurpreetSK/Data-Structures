@@ -2,9 +2,6 @@ package Trees.BinaryTrees;
 
 import Trees.Node;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 /**
  * Created by Gurpreet on 26/08/16.
  */
@@ -51,7 +48,7 @@ public class DiameterOfTree {
      *     Diameter is the number of nodes in the longest route of a tree.
      *
      *     Diameter is MAX(left_sub_tree_diameter, right_sub_tree_diameter, left_subtree_height + right_subtree_height + 1)
-     *     Therefore, calculate left subtree heightm right subtree height and diameters of both the subtrees and compare.
+     *     Therefore, calculate left subtree height right subtree height and diameters of both the subtrees and compare.
      */
 
 
