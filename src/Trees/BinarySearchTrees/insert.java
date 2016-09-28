@@ -29,8 +29,10 @@ public class Insert {
 
         Node toInsert = newNode(i);
         if (root.getLeft() == null || root.getRight() == null) {
-            if (root.getData() < i) root.setRight(toInsert);
-            else root.setLeft(toInsert);
+            if (root.getData() < i)
+                root.setRight(toInsert);
+            else
+                root.setLeft(toInsert);
             return true;
         }
         if (i < root.getData()) return insert(i, root.getLeft());
